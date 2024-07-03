@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="title">Countdown Timer</div>
+
+        <div class="time-labels">
+            <p>Hour</p>
+            <p>Minutes</p>
+            <p>Seconds</p>
+        </div>
+
+        <div class="inputs">
+            <input type="number" class="time hour"
+             maxlength="2" 
+             oninput="this.value=this.value.slice(0,this.maxLength)" 
+             placeholder="00">
+            <p class="colon">:</p> 
+            <input type="number" class="time minute"
+             maxlength="2" 
+             oninput="this.value=this.value.slice(0,this.maxLength)" 
+             placeholder="00">
+            <p class="colon">:</p> 
+            <input type="number" class="time sec"
+             maxlength="2" 
+             oninput="this.value=this.value.slice(0,this.maxLength)" 
+             placeholder="00">
+        </div>
+
+        <div class="btns">
+            <button class="btn start">Start</button>
+            <button class="btn stop">Stop</button>
+            <button class="btn reset">Reset</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
